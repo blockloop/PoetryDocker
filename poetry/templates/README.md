@@ -10,7 +10,7 @@ This images has the following configuration
 An example on how to use this image
 
 ```
-FROM blockloop/poetry:py{{= fp.config.version.python}}-{{= fp.config.poetry.version}}-{{= fp.config.os.base }}
+FROM blockloop/poetry:{{= fp.config.version.python}}-{{= fp.config.poetry.version}}-{{= fp.config.os.base }}
 
 ADD poetry.lock pyproject.toml ./
 

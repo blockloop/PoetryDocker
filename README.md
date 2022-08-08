@@ -7,7 +7,7 @@ This dockerfile contains the awesome new Python packaging tools [Poetry](https:/
 ## How to use this image
 
 ```bash
-$ docker run -it --rm blockloop/poetry:py3.7-preview-alpine 
+$ docker run -it --rm blockloop/poetry:3.7-preview-alpine 
 Poetry version 1.0.0b9
 
 USAGE
@@ -27,7 +27,7 @@ AVAILABLE COMMANDS
 The image behaves like you are using `poetry` installed normally. So you can just append the commands and options as you normally would.
 
 ```bash
-$ docker run -it --rm blockloop/poetry:py3.7-preview-alpine install --help
+$ docker run -it --rm blockloop/poetry:3.7-preview-alpine install --help
 BusyBox v1.30.1 (2019-06-12 17:51:55 UTC) multi-call binary.
 
 Usage: install [-cdDsp] [-o USER] [-g GRP] [-m MODE] [-t DIR] [SOURCE]... DEST
@@ -48,7 +48,7 @@ Copy files and set attributes
 You can also base your own image on this as follows:
 
 ```dockerfile
-FROM blockloop/poetry:py3.7-latest-alpine
+FROM blockloop/poetry:3.7-latest-alpine
 
 ARG STAGE
 
