@@ -1,4 +1,4 @@
-FROM python:2.7-alpine
+FROM python:3.9-alpine
 
 # Specify the environment you want to build for
 ENV PYTHONFAULTHANDLER=1 \
@@ -7,7 +7,7 @@ ENV PYTHONFAULTHANDLER=1 \
     PIP_NO_CACHE_DIR=off \
     PIP_DISABLE_PIP_VERSION_CHECK=on \
     PIP_DEFAULT_TIMEOUT=100 \
-    POETRY_VERSION=1.1.14
+    POETRY_VERSION=1.2.0b3
 
 
 RUN cd /opt && \

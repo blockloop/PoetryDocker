@@ -1,4 +1,4 @@
-FROM python:2.7-alpine
+FROM python:3.9-alpine
 
 # Specify the environment you want to build for
 ENV PYTHONFAULTHANDLER=1 \

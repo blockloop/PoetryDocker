@@ -5,12 +5,12 @@ This images has the following configuration
 
 - OS: alpine
 - Python: 2.7
-- Poetry: 0.12.17
+- Poetry: 1.1.14
 
 An example on how to use this image
 
 ```
-FROM nicklehmann/poetry:py2.7-0.12.17-alpine
+FROM blockloop/poetry:py2.7-1.1.14-alpine
 
 ADD poetry.lock pyproject.toml ./
 

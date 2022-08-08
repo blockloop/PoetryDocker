@@ -4,10 +4,10 @@ fish-pepper:
     - "version"
     - "os"
     - "poetry"
-  name: "nicklehmann/poetry"
+  name: "blockloop/poetry"
   build: 2
 
-maintainer: "Nick Lehmann <nick@lehmann.sh>"
+maintainer: "blockloop <noreply@blockloop.io>"
 
 config:
   version:
@@ -21,11 +21,15 @@ config:
       python: "3.7"
     3.8:
       python: "3.8"
+    3.9:
+      python: "3.9"
+    "3.10":
+      python: "3.10"
   os:
     alpine:
       base: "alpine"
   poetry:
     preview:
-      version: "1.0.0b9"
+      version: "1.2.0b3"
     latest:
-      version: "0.12.17"
+      version: "1.1.14"

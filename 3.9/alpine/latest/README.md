@@ -4,13 +4,13 @@ Poetry inside Docker
 This images has the following configuration
 
 - OS: alpine
-- Python: 3.7
-- Poetry: 1.2.0b3
+- Python: 3.9
+- Poetry: 1.1.14
 
 An example on how to use this image
 
 ```
-FROM blockloop/poetry:py3.7-1.2.0b3-alpine
+FROM blockloop/poetry:py3.9-1.1.14-alpine
 
 ADD poetry.lock pyproject.toml ./
 
