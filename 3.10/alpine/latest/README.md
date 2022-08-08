@@ -10,7 +10,7 @@ This images has the following configuration
 An example on how to use this image
 
 ```
-FROM blockloop/poetry:py3.10-1.1.14-alpine
+FROM blockloop/poetry:3.10-1.1.14-alpine
 
 ADD poetry.lock pyproject.toml ./
 
