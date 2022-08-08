@@ -13,21 +13,17 @@ jobs:
     steps:
       - uses: actions/checkout@v1
 
-      -
-        name: Login to DockerHub
+      - name: Login to DockerHub
         uses: docker/login-action@v2
         with:
           username: ${{ secrets.DOCKERHUB_USERNAME }}
           password: ${{ secrets.DOCKERHUB_TOKEN }}
-      -
-        name: Build and push
+      - name: Build and push
         uses: docker/build-push-action@v3
         with:
           push: true
-          image: blockloop/poetry
-          tags: py${{ matrix.python-version }}-${{ matrix.poetry-version }}-${{ matrix.os }}
-          dockerfile: ${{ matrix.python-version }}/${{ matrix.os }}/${{ matrix.poetry-version }}/Dockerfile
-
+          tags: blockloop/poetry:${{ matrix.python-version }}-${{ matrix.poetry-version }}-${{ matrix.os }}
+          file: ${{ matrix.python-version }}/${{ matrix.os }}/${{ matrix.poetry-version }}/Dockerfile
 
   update_description:
     name: Update description
